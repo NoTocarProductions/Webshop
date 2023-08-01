@@ -1,0 +1,143 @@
+@charset "utf-8";
+/*footer.css*/
+
+footer {
+    height: 200px;
+    width: 100%;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-template-areas: 
+    ". socials contact subscribe .";
+    background-color: #ABD7A8;
+    color: #FFFFFF;
+    position: absolute;
+}
+
+div.socials {
+    grid-area: socials;
+    display: grid;
+    align-self: center;
+    place-self: center;
+}
+
+
+div.h1 {
+    text-align: center;
+}
+
+.subscribe h4 {
+    text-align: center;
+    grid-area: header;
+}
+
+
+div.contact {
+    grid-area: contact;
+    width: 400px;
+    height: 100px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: smaller;
+}
+
+div.subscribe {
+    grid-area: subscribe;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "email"
+    "abo";
+    padding-top: 10%;
+}
+
+div.socialBox {
+    display: inline-grid;
+    grid-template-areas: 
+    "one two three";
+    gap: 15px;
+    position: relative;
+}
+
+
+img.twit {
+    border-radius: 10px;
+    grid-area: one;
+    opacity: 0.8;
+}
+
+img.face {
+    border-radius: 10px;
+    grid-area: two;
+    opacity: 0.8;
+}
+
+img.insta {
+    border-radius: 10px;
+    grid-area: three;
+    opacity: 0.8;
+}
+
+a.link {
+    margin-left: 25px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+}
+
+div.formMail {
+    position: relative;
+}
+
+input#inputFooterEmail {
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0;
+    font-family: inherit;
+    padding: 0;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    background: white;
+    border-radius: 10px;
+    color: white;
+    transition: all .15s ease;
+}
+
+button#buttonFooterSend {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: #ABD7A8;
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+input::placeholder {
+    text-align: center;
+    opacity: 0.2;
+}
+
+button#buttonFooterSend:hover {
+    background-color: white;
+    color: #ABD7A8;
+    cursor: pointer;
+}
+
+#abo {
+    grid-area: email;
+}
+
+#logo{
+    justify-self: center;
+}

@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/*DOCUMENT LAYOUT FOR MAINPAGE PRULARIA WEBSHOP*/
+
+header {
+    display: grid;
+    background-color: #ABD7A8;
+    height: 150px;
+}
+
+header img {
+    justify-self: center;
+    align-self: end;
+    width: 400px;
+    height: auto;
+}
+
+
+main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "productInfo .";
+    padding: 25px 50px;
+}
+
+body {
+    height: auto;
+}
+
+.productInfo {
+    grid-area: productInfo;
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Light", sans-serif;
+}
+
+.inputMainAmount {
+    width: 20px;
+}
+
+.inputSubmitAmount {
+    width: 20px;
+}
+
+.bestelBtn{
+    height: 40px;
+    width: 40px;
+}
+
+/* Winkemandje  */
+/* _______________________________________________ */
+#cart-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+    right: 20px;
+    width: 400px;
+    background-color:#f2f4f3;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    color: black;
+    opacity: 0.6;
+    max-height: 200px;
+    width: 400px;
+    overflow-y: auto;
+}
+
+.cart-container-caption {
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.cart-table-header {
+    text-align: center;
+    color: black;
+    font-size: 110%;
+}
+
+.cart-content {
+    max-height: 400px;
+    width: 400px;
+    overflow-y: auto;
+}
+
+.cart-content table {
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+}
+
+.cart-content table th,
+.cart-content table td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.cart-content table tr:last-child th,
+.cart-content table tr:last-child td {
+    border-top: 1px solid #ddd;
+    font-weight: normal;
+}
+
+.cart-content table th:nth-child(1),
+.cart-content table td:nth-child(1) {
+    text-align: left;
+    width: 60%;
+}
+
+.cart-content table th:nth-child(2),
+.cart-content table td:nth-child(2) {
+    text-align: left;
+    width: 20%;
+}
+
+.cart-content table th:nth-child(3),
+.cart-content table td:nth-child(3) {
+    text-align: left;
+    width: 20%;
+}
+
+.cart-content table tr:last-child th:nth-child(1),
+.cart-content table tr:last-child td:nth-child(1) {
+    text-align: left;
+    width: 20%;
+}
+
+.cart-content table tr:last-child th:nth-child(2),
+.cart-content table tr:last-child td:nth-child(2) {
+    text-align: left;
+}
+
+.cart-content table tr:last-child th:nth-child(3),
+.cart-content table tr:last-child td:nth-child(3) {
+    text-align: left;
+}
+
+form button[name='bestel'] {
+    display: inline-block;
+    margin-top: 20px; /* Increase the margin-top value for more space */
+    padding: 12px 24px; /* Increase the padding values for a larger button */
+    font-size: 18px; /* Increase the font-size for a larger button */
+    background-color: #a9927d;
+    color:#f2f4f3;
+    border:none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 15px; 
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 140px;
+}
+
+form button[name='bestel']:hover {
+    background-color:rgb(95, 32, 32);
+}
+
+.totaal {
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-total-name {
+    margin-left: 0;
+}
+
+.cart-total-price {
+    margin-right: 90px;
+}
+
